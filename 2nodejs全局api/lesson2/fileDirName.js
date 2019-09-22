@@ -15,15 +15,6 @@ var server = http.createServer(function(req,res){
     var urlObj = url.parse(req.url);
     var urlPathname = urlObj.pathname
     
-    
-    console.log("<")
-    console.log(urlObj);
-    console.log(urlObj.pathname);
-    console.log(">")
-
-    // console.log("<")
-    // console.log(req.url);
-    // console.log(">")
 
     if(urlPathname =='/favicon.ico'){
         res.end();
@@ -52,4 +43,4 @@ var server = http.createServer(function(req,res){
 });
 //服务监听一个窗口
 server.listen(8081);
-console.log("server is listening 8081");
+console.log("server is listening 8080");
